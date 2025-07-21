@@ -1,0 +1,45 @@
+# FTC Python-to-Java DSL Transpiler Dependencies
+
+# Core Python dependencies
+# (Most functionality uses only standard library)
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+coverage>=6.0.0
+
+# Development dependencies
+black>=22.0.0          # Code formatting
+flake8>=5.0.0          # Linting
+mypy>=0.991            # Type checking
+
+# Documentation dependencies (optional)
+sphinx>=5.0.0          # Documentation generation
+sphinx-rtd-theme>=1.0.0  # ReadTheDocs theme
+
+# Optional: For enhanced AST manipulation (if needed in future)
+# astor>=0.8.1         # AST to source code conversion
+# astunparse>=1.6.3    # AST unparsing
+
+# Optional: For JSON handling in dashboard features
+# (Standard library json module is sufficient for current needs)
+
+# Optional: For advanced code analysis
+# pylint>=2.15.0       # Advanced linting
+
+# Note: This project primarily uses Python standard library modules:
+# - ast (Abstract Syntax Trees)
+# - sys (System-specific parameters)
+# - os (Operating system interface)
+# - re (Regular expressions)
+# - typing (Type hints)
+# - dataclasses (Data classes)
+# - enum (Enumerations)
+# - unittest (Unit testing)
+# - unittest.mock (Mock objects)
+
+# The minimal dependencies approach ensures:
+# 1. Easy installation and setup
+# 2. Reduced dependency conflicts
+# 3. Better compatibility across Python versions
+# 4. Faster CI/CD pipeline execution
